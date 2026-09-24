@@ -1,0 +1,50 @@
+# Font
+font-family = Maple Mono
+font-size = 12
+
+# Theme
+foreground = #f8f8f2
+background = #000000
+cursor-color = #ffffff
+
+# ANSI colors
+palette = 0=#000000
+palette = 1=#ff5555
+palette = 2=#50fa7b
+palette = 3=#f1fa8c
+palette = 4=#2eb3f0
+palette = 5=#ff79c6
+palette = 6=#8be9fd
+palette = 7=#bbbbbb
+palette = 8=#44475a
+palette = 9=#ff5555
+palette = 10=#50fa7b
+palette = 11=#f1fa8c
+palette = 12=#2eb3f0
+palette = 13=#ff79c6
+palette = 14=#8be9fd
+palette = 15=#ffffff
+
+# Terminal
+term = xterm-256color
+background-opacity = 0.7
+
+# Window
+window-decoration = none
+window-save-state = never
+window-width = 1900
+window-height = 1060
+window-padding-x = 5
+window-padding-y = 5
+
+# Cursor
+cursor-style = block
+cursor-style-blink = true
+
+# Shell integration
+shell-integration-features = no-cursor
+
+# Keybindings
+keybind = ctrl+shift+t=text:tmux\r
+keybind = ctrl+shift+a=text:/home/m3lk0r/.config/tmux-sessionizer.sh\r
+
