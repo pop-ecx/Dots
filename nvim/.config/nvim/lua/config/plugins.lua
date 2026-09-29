@@ -103,7 +103,13 @@ local plugins = {
       { 'nvimtools/hydra.nvim', branch = 'main' },
     },
   },
-  {'rose-pine/neovim'},
+  --{'rose-pine/neovim'},
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  }
 }
 
 local opts = {}
