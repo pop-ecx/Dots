@@ -23,12 +23,20 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "",
+    output   = "eDP-1",
     mode     = "preferred",
     position = "auto",
     --scale    = "auto",
     scale    = 1.0,
 })
+
+hl.monitor({
+    output   = "HDMI-A-1",
+    mode     = "3840x2160@30",
+    position = "1920x0",
+    scale    = 2.5,
+})
+
 
 
 ---------------------
@@ -36,7 +44,7 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal    = "kitty"
+local terminal    = "ghostty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
 
@@ -130,7 +138,7 @@ hl.config({
         blur = {
             enabled   = true,
             size      = 3,
-            passes    = 1,
+            passes    = 3,
             vibrancy  = 0.1696,
         },
     },
@@ -213,7 +221,7 @@ hl.config({
 
 hl.config({
     misc = {
-        force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
+        force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
     },
 })
