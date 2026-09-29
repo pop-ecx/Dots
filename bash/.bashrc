@@ -160,3 +160,10 @@ export FZF_CTRL_R_OPTS="--height 40% --layout=reverse --border"
 export FZF_ALT_C_OPTS="--height 40% --layout=reverse --border"
 alias vi="nvim"
 eval "$(fzf --bash)"
+
+# ZVM
+export ZVM_INSTALL="$HOME/.zvm/self"
+if [ -d "$ZVM_INSTALL" ]; then
+  export PATH="$PATH:$HOME/.zvm/bin"
+  export PATH="$PATH:$ZVM_INSTALL"
+fi
