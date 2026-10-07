@@ -278,7 +278,7 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2
 hl.bind("ALT + SHIFT + C", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("wofi --show drun"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
