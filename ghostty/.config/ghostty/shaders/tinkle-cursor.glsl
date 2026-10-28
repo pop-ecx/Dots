@@ -373,6 +373,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     fragColor = texture(iChannel0, fragCoord.xy / iResolution.xy);
     #endif
 
+    vec4 orig = fragColor; //delete this to return to original color
     vec2 vu = normalizeCoord(fragCoord, 1.0);
     vec2 off = vec2(-0.5, 0.5);
 
@@ -453,10 +454,14 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
         }
     }
 
-    float curAlpha = step(sdfCur, 0.0);
-    if (curAlpha > 0.001) {
-        outC = mix(outC, vec4(TRAIL_COLOR.rgb, CURSOR_ALPHA), curAlpha);
-    }
+    //float curAlpha = step(sdfCur, 0.0);
+    //if (curAlpha > 0.001) {
+    //    outC = mix(outC, vec4(TRAIL_COLOR.rgb, CURSOR_ALPHA), curAlpha);
+    //}
+
+    float inCursor = antialiasNoBlur(sdfCur);
+    outC = mix(outC, orig, inCursor);
+
 
     fragColor = outC;
 }

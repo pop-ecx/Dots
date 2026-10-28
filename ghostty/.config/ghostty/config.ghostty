@@ -5,7 +5,7 @@ font-size = 12
 # Theme
 foreground = #f8f8f2
 background = #000000
-cursor-color = #ffffff
+#cursor-color = #ffffff
 
 # ANSI colors
 palette = 0=#000000
@@ -27,7 +27,7 @@ palette = 15=#ffffff
 
 # Terminal
 term = xterm-256color
-background-opacity = 0.7
+background-opacity = 1.0
 
 # Window
 window-decoration = none
@@ -37,7 +37,8 @@ window-height = 1060
 window-padding-x = 5
 window-padding-y = 5
 
-# Cursor
+cursor-color = cell-foreground
+cursor-text = cell-background
 cursor-style = block
 cursor-style-blink = true
 
